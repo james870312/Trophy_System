@@ -233,7 +233,12 @@
                     <option value="honor">🏆 榮耀勳章</option>
                     <option value="funny">🤡 搞笑事蹟</option>
                     <option value="dark">🙈 終極黑歷史</option>
-                    <option value="love">🪳 搞事勳章 </option>
+                    <option value="love">🪳 搞事勳章</option>
+                    <option value="rebel">🔪 大逆不道</option>
+                    <option value="cheap">🪙 客家鐵公雞</option>
+                    <option value="smart">💡 生活智慧王</option>
+                    <option value="ghost">👻 消失達人</option>
+                    <option value="king">👑 絕對王者</option>
                 </select>
             </div>
         </div>
@@ -269,10 +274,15 @@
         let nicknamesArray = [];
 
         const categoryConfig = {
-            'honor': { icon: '🥇', label: '榮耀勳章', color: '#f1c40f' },
-            'funny': { icon: '🏅', label: '搞笑事蹟', color: '#e67e22' },
-            'dark':  { icon: '🎖️', label: '終極黑歷史', color: '#9b59b6' },
-            'love':  { icon: '🪳', label: '搞事勳章', color: '#e74c3c' }
+            'honor': { icon: '🥇', label: '榮耀勳章', color: '#f1c40f' }, // 金黃色
+            'funny': { icon: '🏅', label: '搞笑事蹟', color: '#e67e22' }, // 橘色
+            'dark':  { icon: '🎖️', label: '終極黑歷史', color: '#9b59b6' }, // 紫色
+            'love':  { icon: '🪳', label: '搞事勳章', color: '#e74c3c' }, // 紅色
+            'rebel': { icon: '🔪', label: '大逆不道', color: '#c0392b' }, // 深紅色
+            'cheap': { icon: '🪙', label: '客家鐵公雞', color: '#95a5a6' }, // 灰銅色
+            'smart': { icon: '💡', label: '生活智慧王', color: '#2ecc71' },   // 綠色
+            'ghost': { icon: '👻', label: '消失達人', color: '#34495e' }, // 藍灰色
+            'king':  { icon: '👑', label: '絕對王者', color: '#1abc9c' }  // 青綠色
         };
 
         function renderList() {
