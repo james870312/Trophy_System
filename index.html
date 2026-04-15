@@ -401,8 +401,11 @@
         }
 
         function deleteNickname(index) {
-            alert("目前版本還沒支援刪除（雲端版）");
-            alert("請手動至 https://docs.google.com/spreadsheets/d/1TcEjlB0gaFsHlTRSvJEXEn5qevpnMxzTetKZIrdlJFg/edit?usp=drive_link 修改，謝謝");
+            const go = confirm("請手動至 Google 試算表修改資料。\n\n按「確定」直接開啟連結");
+        
+            if (go) {
+                window.open("https://docs.google.com/spreadsheets/d/1TcEjlB0gaFsHlTRSvJEXEn5qevpnMxzTetKZIrdlJFg/edit?usp=drive_link", "_blank");
+            }
         }
 
         // 初始渲染
